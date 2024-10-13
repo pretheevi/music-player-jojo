@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: #2A0A3D;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.music_player{
+  background-color: #D4AF37;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  background-color: #B22222;
+  color: #FFD700;
+  line-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+.image{
+  width: 250px;
+  border-radius: 20px;
+  border: 8px solid #f8c598;
+}
+
+.heading{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Cinzel";
+  padding: 5px 0px;
+  color: #EAEAEA;
+}
+#artist-name{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 8px;
+  background-color: #a97c00; /* background for the slider track */
+  border-radius: 5px;
+  outline: none;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: #fff9ec; /* thumb color */
+  border: 6px solid #f6b882;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.controls{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.controls div{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background-color: #B22222;
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+  border-radius: 50%;
+  color: #2A0A3D;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2){
+  transform: scale(1.5);
+  background-color: #fff7de;
+  color: #B22222;
+}
